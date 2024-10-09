@@ -17,12 +17,13 @@ article {
     @include mixins.custom-card;
 }
 
-.container {
+.container-md {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: flex-start;
+    background-color: blue;
 }
 
 .container2 {
