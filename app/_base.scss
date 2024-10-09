@@ -1,0 +1,10 @@
+$font-stack: Helvetica, sans-serif;
+$text-color: white;
+$primary-color: brown;
+$text-color-link: rgb(216, 158, 216);
+$text-color-linkh: rgb(194, 114, 194);
+
+body {
+    font: 100% $font-stack;
+    color: $text-color;
+}

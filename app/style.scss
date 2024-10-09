@@ -1,0 +1,47 @@
+@use 'base';
+@use 'mixins';
+@use 'sass:math';
+
+article {
+    width: 300px;
+    padding: 5px 10px 5px 10px;
+    background-color: base.$primary-color;
+    border-radius: 10px;
+    a {
+        text-decoration: none;
+        color: base.$text-color-link;
+        &:hover {
+            color: base.$text-color-linkh;
+        }
+    }
+    @include mixins.custom-card;
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+main[role="main"]{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: aqua;
+    width: math.div(600px,960px)*100%;
+}
+
+aside[role="complementary"]{
+    background-color: yellow;
+    width: math.div(300px,960px)*100%;
+    margin-left: auto;
+    color: black;
+}
